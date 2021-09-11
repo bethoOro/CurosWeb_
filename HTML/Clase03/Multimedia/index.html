@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 3</title>
+  </head>
+  <body>
+    <h1>Clase 3</h1>
+    <h2>Multimedia</h2>
+    <h3>Imagenes</h3>
+    <!-- Para agregar una imagen utilizamos la etiqueta img -->
+    <img src="img/imagen.jpg" alt="Paisaje" title="Paisaje" width="600px" />
+    <!-- Utilizamos el atributo src (fuente) para colocar la ruta de la imagen
+    y con atributo alt le damos un texto alternativo -->
+    <!-- Con el atributo title agregamos un titulo y hace un tooltip, que es cuando
+    colocamos el puntero del mouse y sale un el titulo de la imagen -->
+    <p>
+      Los atributos alt y title son muy importantes para las imagenes, ayudan
+      mucho para el posicionamiento de las páginas web.
+    </p>
+
+    <hr>
+
+    <h3>Audio</h3>
+    <!-- Con la etiqueta audio agregamos audio y agregamos el atributo controls 
+    para agregar el control del audio -->
+    <audio src="media/pocion-de-minecraft-sonido.mp3" controls autoplay></audio>
+    <!-- Con el atributo autoplay se reproduce el audio automaticamente cuando la página
+    se carga -->
+    <!-- Otra manera de agregar audios,  -->
+    <audio controls>
+      <!-- Agregamos la etiqueta source y dentro de la etiqueta colocamos el atributo src, para
+      colocar la ruta del audio -->
+      <source src="media/pocion-de-minecraft-sonido.mp3">
+      Tu navegador no soporta el audio
+      <!-- Dentro de la etiqueta audio colocamos un mensaje y este mensaje aparecera 
+      cuando el audio no pueda cargarse -->
+    </audio>
+    
+    <hr>
+
+    <h3>Video</h3>
+    <!-- Para colocar un video utilizamos la etiqueta video y funciona igual que
+    la etiqueta audio -->
+    <!-- Con el atributo muted se reproduce el video automaticamente cuando se carga la página
+    pero se reproduce sin audio -->
+    <video src="media/Gato_ronroneando.mp4" controls autoplay muted width="400px"></video>
+    <video  controls width="400px">
+      <source src="media/Gato_ronroneando.mp4">
+      Tu navegador no soporta el video
+    </video>
+  </body>
+</html>

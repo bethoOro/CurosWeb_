@@ -1,0 +1,14 @@
+Push, subir los cambios de la maquina local a github.
+
+Commit, crea una nueva versión de nuestro código.
+
+pull, actualizar la rama, descargar los archivos que te falta en tu maquina local.
+
+A la hora de crear una rama, sea crea una copia de la rama principal, cuando se hace 
+un cambio en una rama secundaria esto no afecta la rama principal.
+
+Podemos crear reglas para las ramas, en setting, branches.
+
+merging, juntas dos ramas.
+
+Pull request, crear una pitición al admi para juntar la rama secundaria a la principal.

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 3</title>
+    <!-- Estilos incrustados -->
+    <style>
+      tr,
+      td,
+      th {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Clase 3</h1>
+    <h2>Botones</h2>
+    <button>Click</button>
+    <a href="https://youtube.com"><button>Click</button></a>
+    <br />
+    <h2>Tablas</h2>
+    <table>
+      <!-- Funciona como contenedor de la tabla -->
+      <tr>
+        <!-- Para meter una fila -->
+        <td>Perro</td>
+        <!-- Para meter una celda en la fila de la tabla -->
+        <td>Gato</td>
+        <td>Serpiente</td>
+        <td>Raton</td>
+      </tr>
+      <tr>
+        <td>Gato</td>
+        <td>Serpiente</td>
+        <td>Raton</td>
+      </tr>
+      <tr>
+        <td>Perico</td>
+      </tr>
+    </table>
+    <hr>
+    <table>
+        <tfoot>
+            <tr> <!-- Footer de la tabla -->
+                <td>Pie de página</td>
+            </tr>
+        </tfoot>
+        <tbody> <!-- Contenido principal de la tabla -->
+            <tr>
+                <td>Perro</td>
+            </tr>
+            <tr>
+                <td>Gato</td>
+            </tr>
+        </tbody>
+        <thead> <!-- Cabecera de la tabla -->
+            <tr>
+                <th>Header</th> <!-- Para colocar titulos -->
+            </tr>
+        </thead>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <td>Gallina</td>
+            <td>Gallina</td>
+            <!-- Utilizamos rowspan para que ocupe más filas -->
+            <td rowspan="2">Gallina</td>
+        </tr>
+        <tr>
+            <td>Perro</td>
+            <td>Perro</td>
+        </tr>
+        <tr>
+            <!-- Utilizamos el atributo colspan para que ocupe más columnas -->
+            <td colspan="2">Gato</td>
+        </tr>
+        <tr>
+            <td>Raton</td>
+        </tr>
+    </table>
+  </body>
+</html>

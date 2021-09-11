@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clase 4</title>
+  </head>
+  <body>
+    <h1>Formulario</h1>
+    <p>
+      Un formulario siver para pedir y enviar información a la base de datos
+    </p>
+
+    <form action="">
+      <!-- Label es como un titulo de un input, y con atributo for 
+        lo asociamos a un input, el for va el id del input -->
+      <label for="nombre">Nombre</label>
+      <!-- Input de texto, es una caja para indroducir texto -->
+      <!-- Con el atributo reandonly hacemos que el input sea solo de lectura -->
+      <input type="text" name="nombre" id="nombre" readonly /> <br />
+      <br />
+
+      <label for="apellido">Apellidos</label>
+      <!-- Con el atributo maxlength colocamos el maximo de caracteres que podemos 
+        introducir -->
+      <input type="text" name="" id="apellido" maxlength="20" />
+      <br />
+      <br />
+
+      <label for="password">Password</label>
+      <!-- Input password es una caja para contraseñas -->
+      <!-- El atributo autofocus para que cuando cargue la página automaticamente 
+        se seleccione el input -->
+      <input type="password" name="password" id="password" autofocus /> <br />
+      <br />
+
+      <label for="email">Correo</label>
+      <!-- Input email es para los correos -->
+      <!-- El placeholder es para introducir un texto para indicar lo que debe 
+        el usuario -->
+      <input
+        type="email"
+        name=""
+        id="email"
+        placeholder="ejemplo@ejemplo.ejemplo"
+      />
+      <br /><br />
+
+      <label for="url">Dominio</label>
+      <!-- Input url es para los enlaces o url -->
+      <!-- Con el atributo value colocamos un valor por defecto en nuestro input -->
+      <input type="url" name="" id="url" value="https://google.com" />
+      <br /><br />
+
+      <label for="phone">Telefono</label>
+      <!-- Input tel es para telefonos -->
+      <!-- Con el atributo disabled podemos desabilitar un input -->
+
+      <input type="tel" name="" id="phone" disabled /> <br />
+      <br />
+
+      <label for="number">Numero</label>
+      <!-- Input number es para numeros -->
+      <!-- Con los atributos min colocamos el numero minimo que puede introducir el usuario 
+        el max es para el maximo que puede introducir el usuario -->
+      <input type="number" name="" id="number" min="5" max="10" /> <br />
+      <br />
+
+      <!-- Input es para seleccionar un color -->
+      <input type="color" name="" id="" />
+      <br /><br />
+
+      <!-- Input submit es un boton -->
+      <input type="submit" value="Enviar" />
+
+      <!-- Input reset es para resetear el formulario -->
+      <input type="reset" value="Reset" />
+    </form>
+
+    <a href="https://www.w3schools.com/html/html_form_input_types.asp"
+      >Inputs</a
+    >
+  </body>
+</html>
