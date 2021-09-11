@@ -12,3 +12,21 @@ Podemos crear reglas para las ramas, en setting, branches.
 merging, juntas dos ramas.
 
 Pull request, crear una pitición al admi para juntar la rama secundaria a la principal.
+
+git init, crear un repositorio local.
+
+git status, vemos el status de los archivos.
+
+git add, es para seleccionar los archivos.
+
+git branch, para ver todas las ramas.
+
+git branch -M nombre, para cambiar el nombre la rama.
+
+git remote add origin url, para asociar el enlace de nuestro repositorio
+
+git remote -v, para ver los enlaces
+
+git push -u origin main, para subir los archivos en el repositorio
+
+git log, para ver todos los commit 
