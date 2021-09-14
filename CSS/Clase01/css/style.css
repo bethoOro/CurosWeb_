@@ -1,0 +1,20 @@
+body {
+    background-color: burlywood;
+}
+/* Selector de etiqueta */
+h1{
+    color: hotpink;
+}
+/* Selector id (Se debe de colocar #) */
+#parrafo1 {
+    color: rgb(61, 43, 226);
+}
+/* Misma propiedad para distintos selectores (De dibiden con una ,) */
+h2,
+h3 {
+    color: blue;
+}
+/* Selector por clase (Se debe de colocar .) */
+.parrafos {
+    color:brown;
+}

@@ -67,9 +67,81 @@
       <input type="number" name="" id="number" min="5" max="10" /> <br />
       <br />
 
+      <label for="color">Color</label>
       <!-- Input es para seleccionar un color -->
-      <input type="color" name="" id="" />
+      <input type="color" name="" id="color" />
       <br /><br />
+
+      <!-- A los input de tipo radio siempre se le pone un value para que se mande 
+        a la base de datos -->
+      <label for="panes">Concha</label>
+      <input type="radio" name="pan" id="panes" value="concha" />
+      <!-- Los radio cuando pertenecen a la misma pregunta siempre 
+        deben de tener el mismo nombre y asi nada más se puede escoger una opcion-->
+      <label for="panes1">Dona</label>
+      <input type="radio" name="pan" id="panes1" value="dona" />
+      <br />
+      <br />
+
+      <!-- Cuando los checkbox son de la misma seccion deben de llevar el mismo nombre -->
+      <label for="perro">Perro</label>
+      <input type="checkbox" name="mascota" id="perro" />
+      <!-- En los checkbox puedes escoger los que quieras a diferencia del radio 
+      que solo puedes ecoger uno y también los de checkbox debemos de pone value -->
+      <label for="gato">Gato</label>
+      <input type="checkbox" name="mascota" id="gato" />
+      <br />
+      <br />
+
+      <!-- Input date es para fechas -->
+      <input type="date" name="" id="" />
+      <br />
+      <br />
+
+      <!-- Input datetime-local es para fecha y hora -->
+      <input type="datetime-local" name="" id="" />
+      <br />
+      <br />
+
+      <!-- Input file es para subir archivos -->
+      <input type="file" name="" id="" />
+      <br />
+      <br />
+
+      <!-- Input hidden sirve para enviar información que el usuario no sabe, no se utiliza mucho -->
+      <input type="hidden" name="" />
+      <br />
+      <br />
+
+      <!-- Input image es para crear un boton submit con una imagen -->
+      <input type="image" src="../img/imagen.jpg" alt="" width="100px" />
+      <br />
+      <br />
+
+      <!-- Input month es para selecionar un mes -->
+      <input type="month" name="" id="" />
+      <br />
+      <br />
+
+      <!-- Input week es para seleccionar semanas -->
+      <input type="week" name="" id="" />
+      <br />
+      <br />
+
+      <!-- Input range es para seleccionar rangos -->
+      <input type="range" name="" id="" />
+      <br />
+      <br />
+
+      <!-- Input time es para selecionar tiempo -->
+      <input type="time" name="" id="" />
+      <br />
+      <br />
+
+      <!-- Input search es como para una barra de busqueda -->
+      <input type="search" name="" id="" />
+      <br />
+      <br />
 
       <!-- Input submit es un boton -->
       <input type="submit" value="Enviar" />

@@ -28,5 +28,6 @@ git remote add origin url, para asociar el enlace de nuestro repositorio
 git remote -v, para ver los enlaces
 
 git push -u origin main, para subir los archivos en el repositorio
+o git push -f origin main para forzar ah que se suba los archivos.
 
 git log, para ver todos los commit 
