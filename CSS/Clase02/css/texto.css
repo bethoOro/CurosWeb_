@@ -1,0 +1,59 @@
+body {
+    background-color: #903ef3;
+}
+
+h1 {
+    color: #ffff00;
+    font-size: 30px;
+}
+
+section {
+    margin: 30px;
+}
+
+div {
+    background-color: #00ff33;
+    margin: 30px;
+}
+
+#div1 {
+    height: 60px;
+    width: 90%;
+}
+
+#div2 {
+    width: 80%;
+    height: 60px;
+}
+
+#div3 {
+    width: 50vw;
+    height: 60px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.parrafo {
+    /* Cambiar el tamaño de la letra */
+    font-size: 20px;
+    /* Cambiar la tipo grafia de la letra */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+    /* Cambiar el grosor de la letra */
+    font-weight: 600;
+    /* Cambiar el estilos de la letra */
+    font-style: italic;
+
+    /* Para alinear nuestro texto */
+    text-align: justify;
+    /* Sirve para subrayar, tachar, subrayar, el texto */
+    text-decoration: underline;
+    /* Sirve para poner la primera letra de cada palabra en mayuscula, poner
+    todas las letras en mayusculas, para poner todas las letras en minusculas */
+    text-transform: capitalize;
+    /* Sirve para indentar la primera fila de un parrafo */
+    text-indent: 50px;
+    /* Sive para dar sombras */
+    text-shadow: -2px -1px 3px cyan;
+}
