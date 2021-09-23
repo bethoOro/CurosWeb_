@@ -1,0 +1,48 @@
+/* * Selector universal, seleciona todos los elementos */
+* {
+    margin: 0;
+}
+
+div {
+    text-align: center;
+    /* El margen es la distancia que hay entre elementos */
+    /* El margen se puede sobreponer y no se suman */
+    /* Para simplificar el margen top, right, bottom, left margin: 15px; */
+    margin-top: 15px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    /* Margen top y bottom, right y left margin: 20px 20px  */
+    /* Margen top, right y left, bottom, margin: 20px 20px 20px */
+    /* Margen top, right, left, bottom, margin: 20px 20px 20px 20px */
+
+    /* Es el borde de un elemento, tamaño, estilo, color  */
+    border: 5px solid black;
+    /* Redondea las esquinas del borde */
+    border-radius: 10px;
+    /* border-radius: 10px 2px 5px 3px */
+
+    /* Es el espacio que hay entre el contenido y el borde, funciona igual que 
+    el margin*/
+    padding: 20px;
+
+    /* Defecto content-box y con border-box no se suman el tamaño del border,
+    padding al tamaño del elemento y si le colocamos un tomaño al elemento 
+    siempre va a medir eso*/
+    box-sizing: border-box;
+}
+
+#div1 {
+    height: 50px;
+    background-color: brown;   
+}
+
+#div2 {
+    height: 80px;
+    background-color: hotpink;
+}
+
+#div3 {
+    height: 20px;
+    background-color: blue;
+}

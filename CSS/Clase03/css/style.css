@@ -1,0 +1,33 @@
+body {
+    background-color: blueviolet;
+}
+
+p {
+    font-family: Helvetica;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    /* Cambia el espacio entre las letras */
+    letter-spacing: 2px;
+    /* Cambia la separación de entre linea de texto */
+    line-height: 22px;
+    /* Cambia el espacio entre palabras */
+    word-spacing: 3px;
+}
+
+ul {
+    /* Cambia el icono de las listas, con none se quita el icono */
+    list-style-type: square;
+    /* Cambia la posicion de los iconos de las listas */
+    list-style-position: inside;
+}
+
+ul li {
+    font-size: 20px;
+    color: darkgray;
+}
+
+#list2 {
+    /* Sirve para poner una imagen como icono de las listas */
+    list-style-image: url(../img/favicon-16x16.png);
+}

@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(48, 47, 47);
+}
+
+.nav {
+    background-color: rgb(58, 58, 58);
+    padding: 5px;
+    border-top: 1px solid rgb(161, 161, 161);
+    border-bottom: 1px solid rgb(161, 161, 161);
+}
+
+p {
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 1px;
+}
+
+.cajas {
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
