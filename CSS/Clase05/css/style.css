@@ -1,0 +1,31 @@
+#btn {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    margin: 20px;
+}
+
+/* Hover, cuando el cursor este encima del elemento */
+#btn:hover {
+    background-color: brown;
+    /* cambiar el cursor */
+    cursor: pointer;
+}
+
+span {
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#conteiner {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    opacity: 0;
+}
+
+/* Con ~ hacemos que cuando hagamos hover a span va afectar al elemento conteiner */
+span:hover ~ #conteiner {
+    opacity: 1;
+}
