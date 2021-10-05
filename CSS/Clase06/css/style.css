@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica;
+}
+
+nav {
+    background-color: darkgoldenrod;
+    color: #fff;
+    padding: 10px;
+    /* Guarda su lugar original hasta que hagamos scroll y se coloca 
+    como le indiquemos */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+a:hover {
+    background-color: burlywood;
+    color: black;
+}
+
+main {
+    /* Crear un contenedor donde sus hijos no se puedan salir */
+    position: relative;
+    background-color: cyan;
+    height: 200px;
+    margin: 10px;
+}
+
+#sec1 {
+  background-color: burlywood;
+  padding: 15px;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  /* Cambia que elemento va estar encima, solo funciona con 
+  elementos que tengan un position y por defaul los elementos
+  se colocan conforme esten en el html */
+  z-index: 2;
+}
+
+div.absolute {
+  background-color: cadetblue;
+  padding: 15px;
+  /* Siempre se va a quedar ahí, y se posiciona conforme
+    al contenedor padre, no reserva su lugar y no ocupa un lugar */
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+
+/* Los hijos directos de body que sean parrafos */
+body > p {
+    background-color: rebeccapurple;
+}
+
+p {
+  background-color: crimson;
+  margin: 10px;
+}
+
+
+#up {
+    /* Siempre se va a quedar en lugar que le digamos aunque 
+    hagamos scroll y no guarda su lugar original */
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: chartreuse;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+span a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: chocolate;
+    color: #fff;
+}
+
+/* Selecionamos una etiqueta footer que tiene una clase footer */
+footer.footer {
+    background-color: palevioletred;
+}
+
+/* Selecionamos una etiqueta footer que tiene una clase footer
+y que tenga un id footer */
+footer.footer#footer {
+    background-color: purple;
+}
+
+/* Todos los parrafos que esten después de un div*/
+div ~ p {
+    background-color: silver;
+}
+
+/* El primer parrafo que esta después de un div */
+div + p {
+    background-color: saddlebrown;
+}
