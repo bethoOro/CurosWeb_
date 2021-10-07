@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+body {
+    padding: 10px;
+}
+
+nav {
+    background-color: cyan;
+    padding: 10px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+nav ul li:hover {
+    background-color: darkslategray;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Para utilizar pseudoclase utilizamos ":" */
+/* firt-child, seleciona el primer elemento del selector
+que escogamas */
+ul li:first-child {
+    color: blue;
+    text-transform: uppercase;
+}
+
+/* last-child, selecciona el ultimo elemento del selector
+que escogamos */
+ul li:last-child {
+    color: brown;
+    text-transform: uppercase;
+}
+
+/* nth-child(El numero del elemento que queremos modificar), 
+escogemos un elementos especifico del elementos
+del selector */
+ul li:nth-child(3) {
+    color: cadetblue;
+    text-transform: uppercase;
+}
+
+section {
+    background-color: cadetblue;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+/* Para pseudoelementos utilizamos "::" */
+/* first-line, modificamos la primera linea de texto */
+section p::first-line {
+    color: crimson;
+}
+
+/* first-letter, modificamos la primera letra */
+section p::first-letter {
+    color: darkorchid;
+    font-size: 25px;
+}
+
+/* selection, es para cuando seleccionamos el texto,
+esta pseudo elemento se puede aplicar a elemento o 
+sin un elemento */
+::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+/* after, se coloca lo que quieres despues del contenido del
+elemento */
+section p::after {
+    content: url(../img/favicon-16x16.png);
+}
+
+/* before, se coloca lo que quieras antes del contenido del
+elemento */
+section p::before {
+    content: url(../img/favicon-16x16.png);
+}
+
+section > div > img {
+    width: 50%;
+    display: block;
+    margin: 15px auto;
+}
+
+section > div > h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+section > div > p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+section > div {
+    margin: 50px 0;
+}
+
+a {
+    display: block;
+}
+
+/* Media queries */
+@media screen and (min-width:768px){
+
+    section > div {
+        float: left;
+        width: 45%;
+        background-color: cadetblue;
+        margin: 0 15px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        background-color: deeppink;
+    }
+}
+
+/* De 768px a 968px funciona el media querie */
+@media (min-width: 768px) and (max-width: 968px) {
+    nav {
+        background-color: darkslategray;
+    }
+}
