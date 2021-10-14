@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* La propiedad flex, se coloca al contenedor padre */
+section#flex{
+    height: 350px;
+    background-color: brown;
+    
+    display: flex;
+
+    /* Direcion en la que se acomodan los elementos hijos */
+    flex-direction: row;   
+    
+    /* Con wrap no crea scroll y se acomodan los elementos y con
+    nowrap crea scroll cuando ya no caben los elementos */
+    flex-wrap: wrap;
+    /* Para colocar flex-direction y flex-wrap en una linea */
+    /* flex-flow: direction  wrap */
+    
+    /* Para acomodar los hijos en horizontal */
+    justify-content: center;
+
+    /* Para acomodar los hijos en vertical */
+    align-items: center;
+
+    /* Acomoda las filas en vertical */
+    align-content: space-around;
+}
+#flex div {
+    height: 70px;
+    padding: 10px;
+    background-color: saddlebrown;
+    border: 2px solid black;
+    text-align: center;
+    color: blanchedalmond;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase; 
+}
+
+/* El grid se aplica al contenedor padre */
+#grid {
+    display: grid;
+    /* Creamos columnos */
+    /* Se pueden colocar las medidas de la columna */
+    /* grid-template-columns: 50% 50%; */
+    /* También se puede utilizar repeat */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* Se colocan las medidas de las filas */
+    grid-template-rows: repeat(5, 80px);
+
+    /* Se coloca un espacio en las columnas entre los elementos */
+    column-gap: 10px;
+
+    /* Se coloca un espacio entre filas entre los elementos */
+    row-gap: 10px;
+
+    /* Con gap: se utiliza para simplificar, column-gap
+    y row-gap */
+
+}
+    
+#grid div {
+    background-color: blueviolet;
+    border: 2px solid rebeccapurple;
+}
+
+#grid div:nth-child(4) {
+    background-color: red;
+    /* En que linea inicia y en que linea termina, de largo*/
+    grid-column: 1/3;
+    /* En que linea inicia y en que linea termina, de alto */
+    grid-row: 2/4;
+}
+
+#area {
+    display: grid;
+    gap: 5px 10px;
+    /* Se crea la plantilla */
+    grid-template-areas: 
+    'header  header header header header header'
+    'menu menu main main main aside'
+    'menu menu footer footer footer footer'
+    ;
+    background-color: rosybrown;
+    padding: 10px;
+}
+
+#area div {
+    background-color: royalblue;
+    border: 2px solid black;
+}
+
+/* Se asocian las areas */
+#header{grid-area: header;}
+#menu{grid-area: menu;}
+#main{grid-area: main;}
+#aside{grid-area: aside;}
+#footer{grid-area: footer;}

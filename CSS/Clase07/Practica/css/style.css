@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    position: sticky;
+    top: 8px;
+    margin-top: 8px;
+}
+
+nav div.btn-menu {
+    display: none;
+}
+
+nav ul {
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav div.btn-right {
+    float: right;
+    margin-right: 10px;
+}
+
+nav ul li img {
+    width: 30px;
+    padding-top: 3px;
+    margin-left: 25px;
+}
+
+nav ul li a span.logo-google{
+    font-size: 25px;
+    color: #666666;
+}
+
+nav ul li a span.logo-google:hover {
+    color: black;
+}
+
+nav ul li a span.logo-drive {
+    font-size: 24px;
+    color: #494949;
+    font-weight: 100;
+    margin-right: 10px;
+}
+
+ul li a.item-nav {
+    padding: 15px 20px;
+    color: #494949;
+}
+
+ul li a.item-nav:hover {
+    background-color: #e4e1e156;
+}
+
+.btn-white {
+    padding: 13px 17px;
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-white a {
+    color: #3434f3;
+    font-size: 17px;
+}
+
+.btn-white:hover {
+    background-color: #5252e00a;
+    border: 1px solid #3434f3;
+}
+
+.btn-blue {
+    padding: 13px 17px;
+    background-color: #1a73e8;
+    border: 1px solid #1a73e8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-blue a {
+    color: #fff;
+    font-size: 17px;
+}
+
+.btn-blue:hover {
+    background-color: #1360c4;
+    border: 1px solid #1360c4;
+}
+
+main {
+    margin-top: 100px;
+}
+
+section {
+    float: left;
+    padding: 50px;
+}
+
+.conteiner-left {
+    width: 45%;
+}
+
+.conteiner-right {
+    width: 55%;
+}
+
+.conteiner-right img {
+    width: 100%;
+}
+
+.conteiner-left h1{
+    color: #000;
+    font-size: 55px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.conteiner-left p {
+    color: #666666;
+    margin: 10px;
+    line-height: 25px;
+}
+
+@media screen and (max-width:1020px) {
+
+    nav div.btn-menu {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    nav div.nav-principal ul li.item{
+        display: none; 
+    }
+
+    nav div.btn-menu {
+        display: inline-block;
+    }
+
+    nav div.nav-principal {
+        display: inline-block;
+        width: 92%;
+    }
+
+    main {
+        margin-top: 10px;
+    }
+
+    section {
+        padding-top: 20px;
+    }
+
+    .conteiner-left {
+        width: 100%;
+    }
+
+    .conteiner-left h1 {
+        font-size: 40px;
+    }
+
+    .conteiner-left p {
+        padding: 10px 0;
+    }
+
+    .conteiner-right {
+        width: 100%;
+    } 
+
+}
